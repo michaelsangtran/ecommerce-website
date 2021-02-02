@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ADMINISTRATION</title>
+<link rel="stylesheet" type="text/css" href="../CSS/tp.css">
+</head>
+<body>
+<div id="logo"><a href= "acceuil.html"><img  src="../images/logo3.png"></a></div>
+
+
+<div class="menu">
+<div>
+<ul class="menu-deroulant">
+	<li><p class="ver">PRODUITS</p>
+		<ul>
+			<li><a href="produit1.php" id="p1" target="_blank">PRODUIT 1</a></li>
+			<li><a href="produit2.php" target="_blank">PRODUIT 2</a></li>
+			<li><hr></li>
+			<li><a href="chaussures.php">CHAUSSURES</a></li>
+			<li><a href="pantalons.php">PANTALONS</a></li>
+			<li><a href="robes.php">ROBES</a></li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+<div class="elem"><a href="magasins.html">MAGASINS</a></div>
+<div class="elem"><a href="#la">GÉRANT</a></div>
+<div class="elem"><a href="contact.html">CONTACT</a></div>
+<div class="elem"><a href="associes.php">ASSOCIÉS</a></div>
+<div class="elem"><a href="connexion.html">CONNEXION</a></div>
+</div>
+<div>
+<div><h2>Formulaires</h2></div>
+<form method="post" action="bdproduit.php" enctype="multipart/form-data" class="admin2">
+	<div class="titre"><b>Enregistrer un produit</b></div>
+		<div>
+			<label for="nompro">Nom: </label> 
+			<input type="text" name="nompro" id="nompro" maxlength="25" required>
+		</div>
+	
+		<div>
+			<label for="description">Description: </label> 
+			<input type="text" name="description" id="description" maxlength="25" required>
+		</div>
+
+		<div>
+			<label for="fabricant">Fabricant: </label> 
+			<input type="text" name="fabricant" id="fabricant" maxlength="25" required>
+		</div>	
+		
+
+		<div>
+				<label for="prix">Prix:</label>
+				<input type="number" name="prix" id="prix" min="0.00" required>
+		</div>
+		
+
+		<div>
+			<label for="photopro">Joindre une image:</label> 
+			<input type="file" name="photopro" id="photopro" required>
+		</div>
+
+
+		<div class="bouton">
+		<input type="submit" value="Envoyer" name="submit">
+		</div>
+		</form>
+		<hr>
+		
+		<form method="post" action="bdemploye.php" enctype="multipart/form-data" class="admin2">
+			<div class="titre"><b>Enregistrer un employé</b></div>
+				<div>
+					<label for="nom">Nom: </label> 
+					<input type="text" name="nom" id="nom" maxlength="25" required>
+				</div>
+			
+			    <div>
+					<label for="prenom">Prénom: </label> 
+					<input type="text" name="prenom" id="prenom" maxlength="25" required>
+				</div>
+
+				<div>
+					<label for="fonction">Fonction: </label> 
+					<input type="text" name="fonction" id="fonction" maxlength="25" required>
+				</div>	
+				
+
+				<div>
+                        <label for="datenaissance">Date de naissance :</label>
+                        <input type="date" name="datenaissance" id="datenaissance" required>
+				</div>
+				
+
+				<div>
+					<label for="photo">Joindre une photo:</label> 
+					<input type="file" name="photo" id="photo" required>
+				</div>
+
+				<div>
+					<label for="courriel">Courriel: </label> 
+					<input type="email" name="courriel" id="courriel" maxlength="25" required>
+				</div>
+
+				<div>
+					<label for="telephone">Téléphone: </label> 
+					<input type="tel" name="telephone" id="telephone" minlength="10" maxlength="10" required>
+				</div>
+
+				<div class="bouton">
+				<input type="submit" value="Envoyer" name="submit">
+				</div>
+     			
+		</form>
+
+</div>
+<div id='la' class="over">
+<div class="con">
+<div style="margin: 25px;">
+<a href="#" class="produit">&times; </a>
+<figure>
+					<figcaption class="produit">Nom du gérant:<br>Michael Ibrahim</figcaption>
+    				<img src="../images/gerant.jpg" height= "300">
+         			
+				</figure>
+</div>
+<div style="margin: 25px;"> <h2>Description du magasin</h2>
+	<p Class="produit" style="text-align: justify;">
+	Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en 
+	page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis 
+	les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour 
+	réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, 
+	mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. 
+	Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des 
+	passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page 
+	de texte, comme Aldus PageMaker.
+	</p>
+	</div>
+	<div style="margin: 25px;"><a href= "acceuil.html"><img  src="../images/logo3.png" alt="logo"></a></div>
+	</div>
+	
+	</div>
+	
+		<footer>
+	
+		<div CLASS="menu">
+			<div class="elem"><p class="ver">DÉVELOPPEURS DU SITE<BR><a href="mailto:ibrade09@gmail.com">ADEOTI IBRAHIM ADEDJOUMA</a><BR><a href="mailto:michaelsangtran@gmail.com">MICHAEL SANG TRAN</a> </p></div>
+			<div class="elem"> 
+				<p class="ver">Contact information:<br><br> <a href="mailto:ibrade09@gmail.com">ibrade09@gmail.com</a></p>
+				<p><a href="mailto:michaelsangtran@gmail.com">michaelsangtran@gmail.com</a></p>
+			</div>
+		</div>
+		<div id="inf3190"><Strong>Ce site est développé dans le cadre du cours <a href="http://www.etudier.uqam.ca/cours?sigle=INF3190" class="produit">INF3190</a> de l’<a href="http://www.uqam.ca" class="produit">UQAM</a></strong></div>
+	</footer>
+	</body>
+	</html>

@@ -1,0 +1,199 @@
+.menu{
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+}
+a:link{
+	color: white;
+	text-decoration: underline;
+	 font-family: fantasy;
+	
+	
+}
+.con{
+	display: flex;
+	flex-direction: row;
+	
+}
+.elem{
+	margin: auto;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+.elem:hover{
+	border-bottom-style: ridge;
+}
+h2{
+	color: black;
+	font-family: fantasy;
+	text-align: center;
+}
+#logo{
+	text-align: center;
+}
+#inf3190{
+	text-align: center;
+}
+
+div.menu{
+	    background-color: #A81400;
+}
+
+.menu-deroulant, .menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    
+}
+.menu-deroulant {
+    text-align: center;
+}
+.menu-deroulant li {
+    display: inline-block;
+    
+    
+}
+#p1, #p2{
+	color:white;
+}
+.menu-deroulant ul li {
+    display: inherit;
+    color: white ;
+    background-color: #A81400;
+}
+.menu-deroulant a {
+    display: block;
+    color: white;
+	
+}
+.menu-deroulant ul {
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+    color: #A81400;
+}
+.menu-deroulant li:hover ul {
+    left: auto;
+}
+.ver:hover{
+	color: white;
+	text-decoration: underline;
+	
+}
+.ver{
+	color: white;
+	text-decoration: underline;
+	
+}
+a:visited{
+	text-decoration: underline;
+	font-family: fantasy;
+	color: white;
+
+}
+.ver{
+	margin-left: 10px;
+	text-decoration: underlined;
+	color: white;
+	font-family: fantasy;
+	background-color: #A81400;
+}
+.section{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	margin-bottom: 38px;
+	
+}
+.produit{
+	color: black;
+	font-family: fantasy;
+	
+}
+
+a.produit{
+	color: black;
+	font-family: fantasy;
+}
+
+table{
+	    border-style: double;
+}
+.ass{
+	bottom:0;
+	left:0;
+	right:0;
+	position: absolute;
+}
+th, td{
+border: 1px solid black;
+width: 200px;
+}
+#con2{
+	display: column;
+	
+}
+area:hover{
+	color: blue;
+}
+.admin{
+	color: black;
+	font-family: fantasy;
+	border:double;
+	margin: auto;
+	width: 360px;
+	height:140px;
+	padding:20px;
+}
+.admin2{
+	color: black;
+	font-family: fantasy;
+	border:double;
+	margin: auto;
+	width: 360px;
+	height:230px;
+	padding:20px;
+	margin-bottom: 30px;
+    margin-top: 30px;
+}
+a.admin{
+	color: black;
+	font-family: fantasy;
+}
+.titre{
+	text-align: center;
+	text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  
+}
+.bouton{
+	text-align: center;
+    margin-top: 20px;
+}
+#la , #prod{
+
+color: black;
+	font-family: fantasy;
+	border:double;
+	margin: auto;
+	width: 1000px;
+	height:500px;
+}
+.over{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	background-color:white;
+	right:0;
+	Transition: opacity 500ms;
+	visibility: hidden;
+	opacity:0;
+}
+.over:target{
+	visibility: visible;
+	opacity:1;
+}
